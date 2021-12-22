@@ -12,7 +12,7 @@ namespace MCD_SystemXMLKullanimi
         static void Main(string[] args)
         {
             #region XML Data Yazma
-            
+
             XmlTextWriter xmlTest = new XmlTextWriter(@"C:\XML\Personellerim.xml", System.Text.UTF8Encoding.UTF8);
             // <----YORUMLAR---->
             xmlTest.WriteComment("Yorumlar buraya yazılır");
@@ -42,7 +42,7 @@ namespace MCD_SystemXMLKullanimi
 
             xmlTest.WriteEndElement();  // Root elementini kapatma
             xmlTest.Close();
-            
+
             #endregion
 
             #region XML Data Okuma
